@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maria Amiel Caryl Salvador — Professional Portfolio</title>
+<meta name="description" content="Professional portfolio of Maria Amiel Caryl Salvador — logistics, operations, virtual assistance, sales, lead generation, digital marketing, real estate support, and stock market trading.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070807;
+  --bg2:#0d0f0e;
+  --card:#121513;
+  --line:rgba(255,255,255,.09);
+  --text:#f2f4f1;
+  --muted:#9aa39d;
+  --cyan:#9acb72;
+  --gold:#7f8b83;
+  --white:#fff;
+  --navy:#f2f4f1;
+  --shadow:0 30px 90px rgba(0,0,0,.52);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 82% 0%,rgba(154,203,114,.045),transparent 25%),radial-gradient(circle at 15% 40%,rgba(255,255,255,.035),transparent 22%),linear-gradient(180deg,#060706,#0b0d0c 58%,#060706);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,8,7,.90);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:Manrope;font-weight:900;letter-spacing:.06em;font-size:21px}
+.brand span{color:var(--cyan)}
+.links{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.cta{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:10px;background:var(--cyan);color:#091006;font-weight:800;font-size:13px;box-shadow:0 8px 22px rgba(25,56,45,.14)}
+.hero{padding:92px 0 80px;min-height:720px;display:grid;grid-template-columns:1.18fr .82fr;gap:60px;align-items:center;position:relative}.hero:after{content:"";position:absolute;right:-8%;top:12%;width:260px;height:260px;border-radius:50%;background:rgba(154,203,114,.028);filter:blur(2px);z-index:-1}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow:before{content:"";width:32px;height:1px;background:var(--cyan)}
+h1{font:900 clamp(48px,7vw,84px)/.94 Manrope;letter-spacing:-.065em;margin:20px 0}
+h1 em{font-style:normal;color:var(--cyan)}
+.hero p{max-width:670px;color:var(--muted);font-size:18px}
+.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn2{padding:12px 18px;border:1px solid rgba(255,255,255,.18);border-radius:10px;font-weight:700}
+.hero-card{position:relative}
+.photo-frame{padding:10px;border:1px solid rgba(154,203,114,.16);border-radius:22px;background:linear-gradient(145deg,rgba(154,203,114,.045),rgba(255,255,255,.025));box-shadow:var(--shadow);transform:rotate(2deg)}
+.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px;display:block;filter:saturate(.94)}
+.float{position:absolute;left:-32px;bottom:34px;background:rgba(18,21,19,.96);border:1px solid var(--line);padding:16px 18px;border-radius:16px;box-shadow:var(--shadow);max-width:230px}
+.float strong{display:block;font:800 24px Manrope;color:var(--cyan)}
+.float small{color:var(--muted)}
+section{padding:92px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:36px}
+.kicker{color:var(--cyan);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.16em}
+h2{font:900 clamp(32px,4vw,52px)/1.02 Manrope;letter-spacing:-.05em;margin:8px 0}
+.lead{color:var(--muted);max-width:620px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
+.quote{font:600 24px/1.35 Manrope;letter-spacing:-.025em}
+.quote span{color:var(--cyan)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:linear-gradient(145deg,#151816,#0f1210);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(154,203,114,.20);box-shadow:0 16px 38px rgba(29,55,78,.08)}
+.card h3{font:700 18px Manrope;margin:8px 0}
+.card p{color:var(--muted);font-size:14px;margin:0}
+.num{font:800 13px Manrope;color:var(--cyan)}
+.timeline{position:relative;margin-left:10px}
+.timeline:before{content:"";position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--line)}
+.role{position:relative;padding:0 0 32px 38px}
+.role:before{content:"";position:absolute;left:2px;top:6px;width:11px;height:11px;border:2px solid var(--cyan);border-radius:50%;background:var(--bg)}
+.role .date{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.role h3{margin:5px 0 3px;font:700 20px Manrope}
+.role .company{color:var(--cyan);font-weight:700}
+.role p{color:var(--muted);margin:7px 0 0;max-width:740px}
+.logo-wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.logo-card{min-height:110px;border:1px solid var(--line);border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;overflow:hidden}
+.logo-card img{max-width:100%;max-height:88px;object-fit:contain}
+.logo-card.text{background:#141715;color:var(--text);font:700 14px Manrope;text-align:center}
+.toolgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.tool{border:1px solid var(--line);background:#111412;padding:14px;border-radius:14px;text-align:center;font-weight:700;font-size:13px;box-shadow:0 5px 18px rgba(29,55,78,.04)}
+.tool span{display:block;color:var(--muted);font-size:10px;font-weight:500;margin-top:2px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.service{padding:28px;border-radius:22px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(154,203,114,.028),#111412)}
+.service .icon{font-size:25px}
+.service h3{font:700 22px Manrope;margin:8px 0}
+.service ul{color:var(--muted);padding-left:18px;margin-bottom:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:12px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contactbox{padding:30px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(154,203,114,.028),#111412);box-shadow:var(--shadow)}
+.contactline{padding:14px 0;border-bottom:1px solid var(--line)}
+.contactline:last-child{border-bottom:0}
+.contactline small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+footer{padding:30px 0;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:850px){
+ .hero,.about,.contact{grid-template-columns:1fr}
+ .hero{padding-top:60px}
+ .grid{grid-template-columns:1fr 1fr}
+ .logo-wrap{grid-template-columns:repeat(2,1fr)}
+ .toolgrid{grid-template-columns:repeat(3,1fr)}
+ .services{grid-template-columns:1fr}
+ .links{display:none}
+}
+@media(max-width:520px){
+ h1{font-size:48px}
+ .grid{grid-template-columns:1fr}
+ .toolgrid{grid-template-columns:repeat(2,1fr)}
+ .float{left:10px}
+}
+
+.tool{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:92px}
+.tool-logo{width:30px;height:30px;object-fit:contain;filter:grayscale(1) brightness(1.65);opacity:.9}
+.tool strong,.tool b{font:700 12px Manrope;color:var(--text)}
+.tool span{display:block;color:var(--muted);font-size:10px;font-weight:500;margin-top:0}
+
+.personal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.personal-card{padding:22px;border:1px solid var(--line);border-radius:18px;background:#111412}
+.personal-card h3{font:700 19px Manrope;margin:6px 0 9px}
+.personal-card p{color:var(--muted);font-size:13px;line-height:1.75;margin:0}
+@media(max-width:850px){.personal-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container navin">
+    <div class="brand">MAC</div>
+    <div class="links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#tools">Tools</a><a href="#contact">Contact</a>
+    </div>
+    <a class="cta" href="#contact">Let's Work Together ↗</a>
+  </div>
+</nav>
+
+<header class="container hero">
+  <div>
+    <div class="eyebrow">MAC / Professional Portfolio</div>
+    <h1>Versatile skills.<br><em>Distinctive</em> experience.</h1>
+    <p>Freight dispatcher, operations specialist, virtual assistant, sales & lead-generation professional, real-estate support specialist, digital marketer, editor & proofreader, and personal stock market trader.</p>
+    <div class="actions">
+      <a class="cta" href="#experience">Explore My Experience ↓</a>
+      <a class="btn2" href="https://wa.me/639277084450?text=Hi%20Maria%2C%20I%27d%20like%20to%20discuss%20a%20project%20or%20opportunity." target="_blank" rel="noopener">Message Me</a>
+      <a class="btn2" href="https://calendar.app.google/3h1BFXkZw7EMUbSf8" target="_blank" rel="noopener">Schedule a Discovery Call</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="photo-frame"><img src="assets/portfolio-portrait.png" alt="Maria Amiel Caryl Salvador"></div>
+    <div class="float"><strong>Multi-disciplinary</strong><small>Logistics • Operations • Sales • Marketing • Real Estate • Markets</small></div>
+  </div>
+</header>
+
+<section id="about">
+<div class="container about">
+  <div>
+    <div class="kicker">01 / About</div>
+    <h2>More than one lane.</h2>
+    <p class="quote">“I bring <span>adaptability, organization, communication, and initiative</span> to every role I take on.”</p>
+  </div>
+  <div>
+    <p class="lead">I am a driven and adaptable professional with experience across logistics, customer service, sales, virtual assistance, lead generation, digital marketing, real estate support, education, and personal stock market trading.</p>
+    <p class="lead">My strength is connecting different skill sets: coordinating people and information, communicating with clients and teams, researching opportunities, managing workflows, and turning details into action.</p>
+    <div class="tags">
+      <span class="tag">Communication</span><span class="tag">Creativity</span><span class="tag">Organization</span><span class="tag">Negotiation</span><span class="tag">Critical Thinking</span><span class="tag">Leadership</span>
+    </div>
+    <div class="personal-grid">
+      <div class="personal-card">
+        <div class="kicker">Beyond Work</div>
+        <h3>A little about me.</h3>
+        <p>I enjoy music, cooking, reading webtoons, and learning new things. I like exploring creative ideas, discovering better ways to work, and continuously building skills that I can apply both professionally and personally.</p>
+      </div>
+      <div class="personal-card">
+        <div class="kicker">Family</div>
+        <h3>Family keeps me grounded.</h3>
+        <p>I am a wife and a mother of three. Family is an important part of what motivates me to keep growing, stay dependable, and build a career that gives me room to create opportunities while being present for the people who matter most.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+ <div class="section-head"><div><div class="kicker">02 / Expertise</div><h2>What I can bring to your team.</h2></div></div>
+ <div class="services">
+  <div class="service"><div class="icon">🚛</div><h3>Freight & Logistics</h3><ul><li>Load searching & dispatch coordination</li><li>Driver & broker communication</li><li>Rate negotiation and load management</li><li>Documentation, POD/BOL and status updates</li></ul></div>
+  <div class="service"><div class="icon">💻</div><h3>Virtual Operations</h3><ul><li>Administrative support</li><li>CRM and document management</li><li>Email, customer service and follow-ups</li><li>Research, data entry and workflow support</li></ul></div>
+  <div class="service"><div class="icon">🎯</div><h3>Sales & Lead Generation</h3><ul><li>Cold calling and prospecting</li><li>Lead research and qualification</li><li>Appointment setting</li><li>Sales communication and follow-up</li></ul></div>
+  <div class="service"><div class="icon">📣</div><h3>Digital Marketing</h3><ul><li>Social media management</li><li>Canva content creation</li><li>Meta advertising & retargeting</li><li>Email marketing and CRM workflows</li></ul></div>
+  <div class="service"><div class="icon">🏠</div><h3>Real Estate Support</h3><ul><li>Land wholesaling support</li><li>Property and prospect research</li><li>Lead generation and organization</li><li>Administrative workflow support</li></ul></div>
+  <div class="service"><div class="icon">📈</div><h3>Market & Trading Experience</h3><ul><li>Personal stock market research</li><li>Price-action and technical analysis</li><li>Trade planning and risk management</li><li>Position management and market monitoring</li></ul></div>
+  <div class="service"><div class="icon">✍️</div><h3>Content & Editorial Support</h3><ul><li>General virtual assistance</li><li>Editing and proofreading</li><li>Content review and refinement</li><li>Publication-ready content support</li></ul></div>
+ </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+ <div class="section-head"><div><div class="kicker">03 / Experience</div><h2>A career built across industries.</h2></div><p class="lead">Selected professional experience from education, customer service, sales, logistics, marketing and operations.</p></div>
+ <div class="timeline">
+  <div class="role"><div class="date">2015–2016</div><h3>Teacher I</h3><div class="company">Divine Grace Academy of Bulacan</div></div>
+  <div class="role"><div class="date">2017–2018</div><h3>Instructor — English Department</h3><div class="company">Japan-Philippines Institute (JPI)</div></div>
+  <div class="role"><div class="date">2019–2021</div><h3>Customer Service Representative</h3><div class="company">TaskUs — Bulacan</div></div>
+  <div class="role"><div class="date">2021</div><h3>Sales Representative</h3><div class="company">Alorica</div></div>
+  <div class="role"><div class="date">Jan 2021–Dec 2022</div><h3>Freight Dispatcher</h3><div class="company">Generation One Logistics — West Haven, CT</div></div>
+  <div class="role"><div class="date">Jun 2022–Nov 2022</div><h3>Virtual Authority Coordinator</h3><div class="company">ACS PRO — Home Health</div></div>
+  <div class="role"><div class="date">Dec 2022–Apr 2023</div><h3>Cold Caller / Sales</h3><div class="company">Maid Quick Cleaning Services — Powder Springs, GA</div></div>
+  <div class="role"><div class="date">Apr 2023–Jan 2024</div><h3>Lead Generation Specialist</h3><div class="company">Rain Digital Marketing — Orange County, CA</div></div>
+  <div class="role"><div class="date">Apr 2024–Jun 2025</div><h3>Freight Dispatcher</h3><div class="company">Freight Runners LLC — formerly E & E Logistics LLC</div></div>
+  <div class="role"><div class="date">Apr 2025–Jul 2025</div><h3>Logistics Supervisor</h3><div class="company">Profit Driven Freight Solutions LLC</div></div>
+  <div class="role"><div class="date">2026</div><h3>Freight Dispatcher & Social Media Manager</h3><div class="company">Legacy Lifted Dispatch</div><p>Dispatch operations, carrier support, load coordination and social media responsibilities.</p></div>
+  <div class="role"><div class="date">2026</div><h3>Real Estate / Land Wholesaling Support</h3><div class="company">Legacy Lifted Land Wholesaling</div></div>
+  <div class="role"><div class="date">Professional / GVA Experience</div><h3>General Virtual Assistant • Editor & Proofreader</h3><div class="company">Chef Mone</div><p>Provided GVA support and handled editing and proofreading, helping refine written content and presentation for publication.</p></div>
+  <div class="role"><div class="date">Ongoing</div><h3>Personal Stock Market Trader</h3><div class="company">Independent</div><p>Personal market research, technical analysis, trade planning and active position management.</p></div>
+ </div>
+</div>
+</section>
+
+<section id="companies">
+<div class="container">
+ <div class="section-head"><div><div class="kicker">04 / Professional Network</div><h2>Companies I've worked with.</h2></div><p class="lead">Selected organizations represented in my CV and professional history.</p></div>
+ <div class="logo-wrap">
+  <div class="logo-card"><img src="assets/logo-profit-driven.png" alt="Profit Driven Freight Solutions logo"></div>
+  <div class="logo-card"><img src="assets/logo-generation-one.jpg" alt="Generation One Logistics logo"></div>
+  <div class="logo-card"><img src="assets/logo-jpi.png" alt="Japan-Philippines Institute logo"></div>
+  <div class="logo-card"><img src="assets/logo-rain-marketing.jpg" alt="Rain Marketing logo"></div>
+  <div class="logo-card"><img src="assets/logo-taskus.png" alt="TaskUs logo"></div>
+  <div class="logo-card"><img src="assets/logo-alorica.jpg" alt="Alorica logo"></div>
+  <div class="logo-card"><img src="assets/logo-acspro.jpg" alt="ACSPro Global Solutions logo"></div>
+  <div class="logo-card"><img src="assets/logo-freight-runners.jpg" alt="Freight Runners LLC logo"></div>
+  <div class="logo-card"><img src="assets/logo-chef-mone.jpg" alt="Chef Mone logo"></div>
+  <div class="logo-card text">MAID QUICK<br>CLEANING</div>
+  <div class="logo-card"><img src="assets/logo-legacy-lifted-dispatch.png" alt="Legacy Lifted Dispatch logo"></div>
+  <div class="logo-card"><img src="assets/logo-legacy-lifted-land.png" alt="Legacy Lifted Land Investing logo"></div>
+ </div>
+</div>
+</section>
+
+<section id="tools">
+<div class="container">
+ <div class="section-head"><div><div class="kicker">05 / Toolkit</div><h2>Tools I work with.</h2></div><p class="lead">A practical toolkit built through logistics, operations, marketing, CRM, real estate and trading work.</p></div>
+ <div class="toolgrid"><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/canva" alt="Canva logo" onerror="this.style.display='none'"><strong>Canva</strong><span>Design</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/meta" alt="Meta Ads logo" onerror="this.style.display='none'"><strong>Meta Ads</strong><span>Marketing</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/facebook" alt="Facebook logo" onerror="this.style.display='none'"><strong>Facebook</strong><span>Social</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/instagram" alt="Instagram logo" onerror="this.style.display='none'"><strong>Instagram</strong><span>Social</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/mailchimp" alt="Mailchimp logo" onerror="this.style.display='none'"><strong>Mailchimp</strong><span>Email</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/activecampaign" alt="ActiveCampaign logo" onerror="this.style.display='none'"><strong>ActiveCampaign</strong><span>Automation</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/systemeio" alt="Systeme.io logo" onerror="this.style.display='none'"><strong>Systeme.io</strong><span>Marketing</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/gohighlevel" alt="GoHighLevel logo" onerror="this.style.display='none'"><strong>GoHighLevel</strong><span>CRM</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/asana" alt="Asana logo" onerror="this.style.display='none'"><strong>Asana</strong><span>Operations</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/googlesheets" alt="Google Sheets logo" onerror="this.style.display='none'"><strong>Google Sheets</strong><span>Operations</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/twilio" alt="Twilio logo" onerror="this.style.display='none'"><strong>Twilio</strong><span>Communications</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/webull" alt="Webull logo" onerror="this.style.display='none'"><strong>Webull</strong><span>Trading</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/robinhood" alt="Robinhood logo" onerror="this.style.display='none'"><strong>Robinhood</strong><span>Trading</span></div><div class="tool"><img class="tool-logo" src="https://cdn.simpleicons.org/thinkorswim" alt="thinkorswim logo" onerror="this.style.display='none'"><strong>thinkorswim</strong><span>Trading</span></div><div class="tool"><b>DAT</b><span>Freight</span></div><div class="tool"><b>Truckstop</b><span>Freight</span></div><div class="tool"><b>123Loadboard</b><span>Freight</span></div><div class="tool"><b>Trucker Tools</b><span>Freight</span></div><div class="tool"><b>Sylectus</b><span>Freight</span></div><div class="tool"><b>Truck AI</b><span>Freight</span></div><div class="tool"><b>DAT360</b><span>Freight</span></div><div class="tool"><b>Workiz</b><span>CRM</span></div><div class="tool"><b>Pebble CRM</b><span>CRM</span></div><div class="tool"><b>PropStream</b><span>Real Estate</span></div><div class="tool"><b>Launch Control</b><span>Lead Gen</span></div></div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+ <div class="section-head"><div><div class="kicker">06 / Education</div><h2>Education & credentials.</h2></div></div>
+ <div class="grid">
+  <div class="card"><div class="num">01</div><h3>Bachelor of Secondary Education</h3><p>Major in English · Polytechnic University of the Philippines · 2013–2014</p></div>
+  <div class="card"><div class="num">02</div><h3>Licensed Professional Teacher</h3><p>Licensed No. 2152923</p></div>
+  <div class="card"><div class="num">03</div><h3>Languages</h3><p>English · Filipino</p></div>
+ </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+ <div><div class="kicker">07 / Contact</div><h2>Let's build something that moves.</h2><p class="lead">Open to remote opportunities, freelance projects and professional collaborations in logistics, operations, virtual assistance, marketing, real estate support and related roles.</p></div>
+ <div class="contactbox">
+  <div class="contactline"><small>Email</small><a href="mailto:mariaamielcarylsalvador@gmail.com">mariaamielcarylsalvador@gmail.com</a></div>
+  <div class="contactline"><small>Phone / WhatsApp</small><a href="https://wa.me/639277084450" target="_blank" rel="noopener">+63 927 708 4450</a></div>
+  <div class="contactline"><small>Location</small>Bulacan, Philippines</div>
+  <div class="contactline"><small>Availability</small>Remote / Project-based / Full-time opportunities</div>
+  <div class="actions" style="display:flex;gap:10px;flex-wrap:wrap">
+   <a class="cta" href="https://wa.me/639277084450?text=Hi%20Maria%2C%20I%27d%20like%20to%20discuss%20a%20project%20or%20opportunity." target="_blank" rel="noopener">Message Me ↗</a>
+   <a class="btn2" href="mailto:mariaamielcarylsalvador@gmail.com?subject=Discovery%20Call%20Request&body=Hi%20Maria%2C%0A%0AI%27d%20like%20to%20schedule%20a%20discovery%20call.%0A%0AMy%20name%3A%20%0ACompany%3A%20%0AWhat%20I%27d%20like%20to%20discuss%3A%20%0APreferred%20date%2Ftime%3A%20%0A%0AThank%20you!">Schedule a Discovery Call ↗</a>
+  </div>
+ </div>
+</div>
+</section>
+
+<footer><div class="container">© 2026 Maria Amiel Caryl Salvador · Professional Portfolio</div></footer>
+</body>
+</html>
